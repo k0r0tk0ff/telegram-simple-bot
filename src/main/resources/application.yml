@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: telegram-simple-bot
+bot:
+  name:
+  token:
+
+################################################
+LOG_LEVEL: debug
+logging:
+  level:
+    root: ${LOG_LEVEL}
+    sun:
+      rmi: info
+    javax:
+      management: info
+    org:
+      springframework:
+        data: ${LOG_LEVEL}
+        web: ${LOG_LEVEL}
+        kafka: info
+      apache:
+        kafka: info
+    com:
+      cryptoalex:
+        simple:
+          bot: ${LOG_LEVEL}
+################################################
